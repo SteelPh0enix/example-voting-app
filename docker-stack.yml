@@ -71,6 +71,9 @@ services:
         delay: 10s
         max_attempts: 3
         window: 120s
+      update_config:
+        parallelism: 3
+        delay: 10s
       placement:
         constraints: [node.role == manager]
 
